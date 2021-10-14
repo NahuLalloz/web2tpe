@@ -1,0 +1,281 @@
+
+body{
+    background-color: lightgray;
+}
+
+
+nav{
+    float: left;
+    font-size:20px;
+    margin-top: 0.2%;
+    margin-left: 20%;
+
+}
+
+li a :hover{
+    background-color: white;
+}
+
+.form-login input {
+    width: 80%;
+    margin: 2% auto;
+    
+}
+
+
+.msj-error{
+    margin: 1% auto;
+    color:rgba(247, 238, 238, 0.692);
+    font-size: 100%;
+}
+
+
+.form-register{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 3%;
+    background-color: rgb(238 ,247 ,244 ,29%);
+    margin: 0% auto;
+}
+
+.form-register input{
+    margin: 1%;
+}
+.form-login .btn-ingreso {
+    width: 30%;
+    color: black;
+    margin-top: 2%;
+    background-color:  teal;
+    border: transparent;
+    
+}
+.form-login {
+    width: 30%;
+    background-color: lightgreen;
+    display: flex;
+    flex-direction: column;
+    margin:auto; 
+    padding: 2%;
+}
+.btn-registrarse{
+    background-color: white;
+  
+    margin-top: 3%;
+    color: black;
+}
+ 
+footer{
+    width: 100%;
+}
+
+.listaFooter{
+    margin-left:5%;
+    display: inline;
+}
+.listaFooter a{
+    background-color: olive;
+    color:black;
+    border-radius: 20%;
+    font-size: 22px;
+}
+
+
+.titulo{
+    font-size: 300%;
+    color: black;
+    margin: 2.5% 20%;
+    margin-left: 30%;
+}
+
+
+
+
+
+.row{
+    width: 100%;
+}
+
+.colorbackground{
+    background-color: lightgray;
+    color:black;
+}
+
+.lin{
+    margin-top: 10px;
+    width:15%;
+    font-size: 120%; 
+    border-radius: 30px;   
+}
+
+
+
+.imagen-infoCelular{
+    width: 50%;
+    margin: 5% 20%;
+}
+
+.tit-info{
+    margin-top: 3%;
+}
+
+.font{
+    color: gray;
+    width: 65%;
+    margin-left: 10%;
+    font-size: 25px;
+}
+.imagen-tabla{
+    width: 50%;
+ }
+.colorCard{
+    background-color :lightgreen;
+}
+
+.text-white {
+    width: 20%;    
+}
+
+.text-white {
+    margin-top: 10%;
+    margin-left: 8%;
+}
+.tableListaCelular{
+    margin: 5% auto;
+    margin-bottom: 1%;
+    width: 90%;
+    color:teal;
+}
+table,th, td {
+    background-color: white;
+    border: 5px solid black;
+    border-collapse: collapse;  
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+.table-admin {
+    margin: 5% auto;
+    margin-bottom: 10%;
+    width: 90%;
+    color:lightgray;
+}
+
+
+.box-nuevocel .titulo-agregar{
+    background-color: transparent;
+    color: lightgray;
+    font-size: 150%;
+    padding: 2%;
+    margin:auto;
+}
+.form-nuevocel{
+    display: flex;
+    flex-direction: column;
+}
+.box-nuevocel {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    background-color: lightgray;
+    margin:10% auto;
+}
+ .form-nuevocel .btn-ingreso{
+    width: 60%;
+    margin: 6% auto;
+    background-color: lightgray;
+    border: transparent;
+    color: black;
+ }
+.form-nuevocel input, .form-nuevocel textarea, .form-nuevocel select{
+    background-color:lightgray;
+    width: 80%;
+    padding: 2%;
+    margin:auto;
+}
+
+ .label-ingreso{
+    font-size: 90%;
+    margin-left: 4%;
+    color:lightgray;
+}
+ 
+#box-editarMarca{
+    background-color: gray;
+    width: 20%;
+    height: 120px;
+    margin: auto;
+   
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+}
+
+.titulo-editar{
+    color:lightgray;
+    margin:3% 10%;
+}
+.show-windows{
+    visibility: visible;
+ }
+.hidden-windows{
+    visibility: hidden;
+}
+ 
+
+
+.btn-guardar, .btn-cancelar, .btn-guardarCel, .btn-cancelarCel{
+    width: 30%;
+    background-color: lightgray;
+    border: transparent;
+    color: blue;
+}
+
+#box-editarCelular{
+    background-color: gray;
+    width: 22%;
+    height: 400px;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+}
+
+.btns-guardar-cancelar{
+    margin: 6% 10%;
+ }
+
+
+.box-editarMarca, .box-editarCelular{
+    display: flex;
+    justify-content: center;
+}
+
+.input-editar, .input-editarCel{
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 1%;
+}
+ 
+
+.btn-oscuro{
+    width: 100%;
+}
+.label-ingreso{
+    font-size: 90%;
+    margin-left: 4%;
+    color: lightgray;
+}
+
+.img{
+    width: 30%;
+}
+
