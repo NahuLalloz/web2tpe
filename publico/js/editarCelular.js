@@ -5,7 +5,7 @@ for(let i=0; i<btnEditCel.length;i++){
     btnEditCel[i].addEventListener("click", function (){
         let tds = btnEditCel[i].closest("tr").querySelectorAll("td");
         let id = btnEditCel[i].getAttribute("id");
-        mostrarModalSerie(tds, id);
+        mostrarModalCelular(tds, id);
     });
 }
 
