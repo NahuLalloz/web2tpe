@@ -33,7 +33,7 @@ class celularesModel{
     }
 
     
-    function getSerie($id){
+    function getProducto($id){
         $sentencia=$this->db->prepare("SELECT*FROM Producto INNER JOIN marca ON Producto.id_marca=Marca.id_marca WHERE id_producto=? ");
         $sentencia->execute(array($id));
         $Producto=$sentencia->fetch(PDO::FETCH_OBJ);
