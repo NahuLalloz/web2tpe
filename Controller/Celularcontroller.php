@@ -25,21 +25,21 @@ class CelularController{
     function getCelulares(){
         $celulares=$this->celularesModel->getCelulares();
         $marca=$this->celModel->getmarca();
-        $this->celularesView->DisplayCelulares($celulares,$marca,$this->User());
+        $this->celularesView->DisplayCelulares($celulares,$marca,$this->Usuario());
 
     }
 
     function obtenerInfoCel($id){
         $celular=$this->celularModel->getCelular($id);
-        $this->celularesView->caractCel($caracteristicas,$this->User());
+        $this->celularesView->caractCel($caracteristicas,$this->Usuario());
     }
 
     function obtenerColorCel(){
         $color=$this->celularModel->getCelColor();
-        $this->celularesView->showCelulares($color,$this->User());
+        $this->celularesView->showCelulares($color,$this->Usuario());
     }
     function obtenerMarcaCel($marca){
         $celulares=$this->celularModel->getMarcaCel($marca);
-        $this->marcaView->showCelulares($marca,$this->User());
+        $this->marcaView->showCelulares($marca,$this->Usuario());
     }
 }
