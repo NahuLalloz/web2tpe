@@ -1,7 +1,7 @@
 {include file="head.tpl"}   
 {include file="back.tpl"}
 {include file="sesion.tpl"}
-        <table class="tableCelLista">
+        <table class="tableListaCelular">
             <thead>
                 <tr>
                     <th colspan="7">Listado de celulares</th>
@@ -24,9 +24,9 @@
                     <td>{$celular->precio}</td>
                     <td>{$celular->color}</td>
                     <td>{$celular->marcaNom}</td>
-                    <td><img  class="imagen-caractCel" src="publico/images/img.png" alt="Imagen no disponible"></td>
+                    <td><img  class="imagen-caractCel" src="publico/images/nodisponible.png" alt="Imagen no disponible"></td>
                      <td>
-                        <a href="eliminarSerie/{$celular->id_producto}">
+                        <a href="eliminarCelular/{$celular->id_producto}">
                             <button type="button" class="btn-info btn  ">Borrar</button>
                         </a>
                     </td>
@@ -55,7 +55,7 @@
                     </a>
                     </td>
                     <td>
-                        <a href="borrarGenero/{$cel->id_marca}">
+                        <a href="borrarMarca/{$cel->id_marca}">
                             <button type="button" class="btn btn-info">Borrar</button>
                         </a>
                     </td>
@@ -63,7 +63,7 @@
             {/foreach}
             {include file="editarMarca.tpl"}
             {include file="editarCelulares	.tpl"}
-                <tr> {* INSERTAR NUEVO GENERO *}
+                <tr> 
                     <td colspan="3">
                         <form action="agregarMarca" method="POST">
                             <input type="text" name="nombre-cel" required>

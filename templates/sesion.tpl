@@ -1,9 +1,9 @@
 {if isset($mail)}
     <a href="logout">
-        <button class="colorbackground">Salir</button>
+        <button class="lin colorbackground">Salir</button>
     </a>
 {else}
     <a href="login">
-        <button type="button" class="colorbackground">Iniciar Sesión</button>
+        <button type="button" class="lin colorbackground">Iniciar Sesión</button>
     </a>
 {/if}

@@ -72,7 +72,7 @@ INSERT INTO `kit` (`id_marca`, `color`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `user`
+-- Estructura de tabla para la tabla `usuario`
 --
 
 CREATE TABLE `usuario` (
@@ -82,7 +82,7 @@ CREATE TABLE `usuario` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Volcado de datos para la tabla `user`
+-- Volcado de datos para la tabla `usuario`
 --
 
 INSERT INTO `user` (`id_usuario`, `email`, `contraseña`) VALUES
@@ -95,20 +95,20 @@ INSERT INTO `user` (`id_usuario`, `email`, `contraseña`) VALUES
 --
 
 --
--- Indices de la tabla `gabinete`
+-- Indices de la tabla `Producto`
 --
 ALTER TABLE `Producto`
   ADD PRIMARY KEY (`id_marca`);
 
 --
--- Indices de la tabla `kit`
+-- Indices de la tabla `Marca`
 --
 ALTER TABLE `Marca`
   ADD PRIMARY KEY (`id_marca`),
   ADD KEY `fk_celulares` (`id_marca`);
 
 --
--- Indices de la tabla `user`
+-- Indices de la tabla `usuario`
 --
 ALTER TABLE `usuario`
   ADD PRIMARY KEY (`id_usuario`);
@@ -118,19 +118,19 @@ ALTER TABLE `usuario`
 --
 
 --
--- AUTO_INCREMENT de la tabla `gabinete`
+-- AUTO_INCREMENT de la tabla `Producto`
 --
 ALTER TABLE `Producto`
   MODIFY `id_producto` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
--- AUTO_INCREMENT de la tabla `kit`
+-- AUTO_INCREMENT de la tabla `Marca`
 --
 ALTER TABLE `Marca`
   MODIFY `id_marca` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
--- AUTO_INCREMENT de la tabla `user`
+-- AUTO_INCREMENT de la tabla `usuario`
 --
 ALTER TABLE `usuario`
   MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
@@ -140,7 +140,7 @@ ALTER TABLE `usuario`
 --
 
 --
--- Filtros para la tabla `kit`
+-- Filtros para la tabla `Marca`
 --
 ALTER TABLE `Marca`
   ADD CONSTRAINT `marca_mbfk_1` FOREIGN KEY (`id_marca`) REFERENCES `Producto` (`id_marca`) ON DELETE CASCADE ON UPDATE CASCADE;

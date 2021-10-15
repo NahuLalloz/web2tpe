@@ -1,3 +1,3 @@
 <a href="home" >
-    <button type="button" class="colorbackground">Inicio</button>
+    <button type="button" class="lin colorbackground">Inicio</button>
 </a>

@@ -20,7 +20,7 @@
                 <td>{$cel->caracteristicas}</td>
                 <td>{$cel->id_producto}</td>
                 <td>
-                    <img src="publico/images/img.png" alt="Imagen no disponible" class="imagen-tabla">
+                    <img src="publico/images/nodisponible.png" alt="Imagen no disponible" class="imagen-tabla">
                 </td>
             </tr>
         {/foreach}

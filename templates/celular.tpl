@@ -4,7 +4,7 @@
    <input type="text" name="celular" value="{$celular->id_producto}" class="hidden-windows">
     <h1 class="titulo tit-info">{$celular->nombre}</h1>
     <div>
-      <img class="img" src="public/images/img-noDisponible.png" alt="Imagen no disponible">
+      <img class="img" src="public/images/img-nodisponible.png" alt="Imagen no disponible">
     </div>
     <label class="font">Color: {$celular->color}</label>
     <h2 class="titulo">Precio</h2>
